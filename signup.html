@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FontAwesome File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div class="container rounded p-2 p-md-5 my-5 box-shadow w-75">
+        <div class="content">
+    
+          <h1 class="mb-4">Smart Sign Up System</h1>
+          
+          <div class="mb-3">
+            <input type="text" class="form-control text-white" id="inputName" placeholder="Enter your name">
+            <div class="d-none alert small my-2 text-bg-light text-danger">
+              Your username must:Be 3–20 characters long. Contain only letters, numbers, underscores, or dots. Not start or end with a dot or underscore. Example: <b>user_name, example.user</b> 
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control text-white" id="inputSignUpEmail" placeholder="Enter your email">
+            <div class="d-none alert small my-2 text-bg-light text-danger">
+              Use a valid email address that you can access <b> (e.g., example@gmail.com) </b>.
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <input type="password" class="form-control" id="inputSignUpPassword" placeholder="Enter your password">
+            <div class="d-none alert small my-2 text-bg-light text-danger">
+              Your password must:Be at least 8 characters long.Include at least one uppercase letter, one lowercase letter, one number, and one special character (e.g., !, @, $).Example: <b> Password123!</b>
+            </div>
+          </div>
+
+
+          <div class="mb-1">
+            <p id="alertSignup" class="d-none small"></p>
+          </div>
+    
+          <button type="button" id="signUp" class="btn btn-outline-info mb-4 mt-3 w-100">Signup</button>
+    
+          <p>Already have an account? <a href="#" id="goToLogin">Login</a></p>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>

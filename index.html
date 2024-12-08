@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <!-- FontAwesome File -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container rounded p-2 p-md-5 my-5 box-shadow w-75">
+      <div class="content">
+        <h1 class="mb-4">Smart Login System</h1>
+
+        <form id="loginForm">
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control text-white"
+              id="inputLoginEmail"
+              placeholder="Enter your email" />
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="inputLoginPassword"
+              placeholder="Enter your password" />
+          </div>
+
+          <div class="mb-1">
+            <p id="alertLogin" class="d-none small"></p>
+          </div>
+
+          <button
+            type="button"
+            id="login"
+            class="btn btn-outline-info mb-4 mt-3 w-100">
+            Login
+          </button>
+
+          <p>Don’t have an account? <a href="#" id="goToSignUp">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/signup.js"></script> -->
+  </body>
+</html>
